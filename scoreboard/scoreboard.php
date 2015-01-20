@@ -58,7 +58,9 @@ function score_board_option_page()
 
 function score_board_plugin_menu()
 {
-		add_settings_page('score-board-plugin','Score Board Options', 'Score Board Options', 'manage_options', 'score_board_settings', 'score_board_option_page');
+//add_options_page( $page_title, $menu_title, $capability, $menu_slug, $function);
+
+add_options_page('Score Board Options', 'Score Board', 'manage_options', 'score-board-settings', 'score_board_option_page');
 }
 add_action('admin_menu', 'score_board_plugin_menu');
 
