@@ -55,15 +55,14 @@ function score_board_option_page()
 	</div>
 	<?php
 }
-/* FIX THIS : WASEEM
-function cccomm_plugin_menu()
-{
-	
-	add_settings_page('cc_comments-plugin','CC Comments Options 2', 'CC Comments Options 2', 'manage_options', 'cc_comments-plugin2', 'score_board_option_page');
-}
-add_action('admin_menu', 'cccomm_plugin_menu');
 
-*/
+function score_board_plugin_menu()
+{
+		add_settings_page('score-board-plugin','Score Board Options', 'Score Board Options', 'manage_options', 'score_board_settings', 'score_board_option_page');
+}
+add_action('admin_menu', 'score_board_plugin_menu');
+
+
   // Create and add Admin Page: WASEEM
  
  
