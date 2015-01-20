@@ -22,7 +22,11 @@ Copyright 2015  Sutlej.net
     along with this program; if not, write to the Free Software
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA 
  */
+
+ // Copy Paste Plugin Function from Excercise File Chapter3: KAMRAN
  
- /*
+ // Copy paste Templates for admin page From Excersise File Chapter5: MANSOOR
  
- */
+  // Create and add Admin Page: WASEEM
+ 
+ 
