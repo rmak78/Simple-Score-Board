@@ -1,8 +1,8 @@
 <?php
-//add front end code here
+// Frontend code comes here
 function show_score_board() {
-	$score_board = '
-	<style type="text/css">
+	$score_board = "
+	<style type='text/css'>
 #score-board-container {
 	width: 350px;
 	height: 75px;
@@ -26,6 +26,7 @@ function show_score_board() {
 	margin-bottom: -10px;
 	text-align: center;
 }
+
 #team-board {
 	background-color:#900;
 	height:inherit;
@@ -71,48 +72,48 @@ function show_score_board() {
 	
 </style>
 
-<div id="score-board-container">
-	<div id="content">
+<div id='score-board-container'>
+	<div id='content'>
     <p> House point scores board</p>
      </div>
-    <div id="team-board">
-    	<div class="team" id="team-1">
-        	<div id="team-name">
-       	 		<p> Pakistan </p>
+    <div id='team-board'>
+    	<div class='team' id='team-1'>
+        	<div id='team-name'>
+       	 		<p><?php echo esc_attr( get_option('score_board_team1_name') ); ?></p>
             </div>
-            <div id="team-score">
-       	 		<p><b> 130 </b></p>
-            </div>
-    	</div>
-        <div class="team" id="team-2">
-        	<div id="team-name">
-       	 		<p> Australia </p>
-            </div>
-            <div id="team-score">
-       	 		<p><b> 130 </b></p>
+            <div id='team-score'>
+       	 		<p><b><?php echo esc_attr( get_option('score_board_team1_score') ); ?></b></p>
             </div>
     	</div>
-        <div class="team" id="team-3">
-        	<div id="team-name">
-       	 		<p> England </p>
+        <div class='team' id='team-2'>
+        	<div id='team-name'>
+       	 		<p><?php echo esc_attr( get_option('score_board_team2_name') ); ?></p>
             </div>
-            <div id="team-score">
-       	 		<p><b> 130 </b></p>
+            <div id='team-score'>
+       	 		<p><b><?php echo esc_attr( get_option('score_board_team2_score') ); ?></b></p>
             </div>
     	</div>
-        <div class="team" id="team-4">
-        	<div id="team-name">
-       	 		<p> South Africa </p>
+        <div class='team' id='team-3'>
+        	<div id='team-name'>
+       	 		<p><?php echo esc_attr( get_option('score_board_team3_name') ); ?></p>
             </div>
-            <div id="team-score">
-       	 		<p><b> 130 </b></p>
+            <div id='team-score'>
+       	 		<p><b><?php echo esc_attr( get_option('score_board_team3_score') ); ?></b></p>
+            </div>
+    	</div>
+        <div class='team' id='team-4'>
+        	<div id='team-name'>
+       	 		<p><?php echo esc_attr( get_option('score_board_team4_name') ); ?></p>
+            </div>
+            <div id='team-score'>
+       	 		<p><b><?php echo esc_attr( get_option('score_board_team4_score') ); ?></b></p>
             </div>
          </div>
 
     </div>
     
 </div>
-	';
+	";
 	echo $score_board;
 }
-add_action("wp_footer",show_score_board);
+add_action('wp_footer',show_score_board);
