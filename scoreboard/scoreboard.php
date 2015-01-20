@@ -3,7 +3,7 @@
 Plugin Name: Score Board Plugin
 Plugin URI: http://www.sutlej.net/plugins/
 Description: This Plugin will display scores of four teams on the webpage
-Author: Rana Mansoor Akbar Khan, Muhammad Waseem, Kamran Sarwar
+Author: Rana Mansoor Akbar Khan, Muhammad Wasim, Kamran Sarwar
 Version: 1.0
 Author URI: http://www.sutlej.net/
  */
