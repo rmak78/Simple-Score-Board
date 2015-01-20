@@ -79,7 +79,7 @@ function show_score_board() {
     <div id='team-board'>
     	<div class='team' id='team-1'>
         	<div id='team-name'>
-       	 		<p><?php echo esc_attr( get_option('score_board_team1_name') ); ?></p>
+       	 		<p>".esc_attr( get_option('score_board_team1_name') )."</p>
             </div>
             <div id='team-score'>
        	 		<p><b><?php echo esc_attr( get_option('score_board_team1_score') ); ?></b></p>
@@ -116,4 +116,4 @@ function show_score_board() {
 	";
 	echo $score_board;
 }
-add_action('wp_footer',show_score_board);
+add_action('wp_footer','show_score_board');
