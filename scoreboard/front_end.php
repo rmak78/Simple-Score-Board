@@ -82,31 +82,31 @@ function show_score_board() {
        	 		<p>".esc_attr( get_option('score_board_team1_name') )."</p>
             </div>
             <div id='team-score'>
-       	 		<p><b><?php echo esc_attr( get_option('score_board_team1_score') ); ?></b></p>
+       	 		<p><b>".esc_attr( get_option('score_board_team1_score') )."</b></p>
             </div>
     	</div>
         <div class='team' id='team-2'>
         	<div id='team-name'>
-       	 		<p><?php echo esc_attr( get_option('score_board_team2_name') ); ?></p>
+       	 		<p>".esc_attr( get_option('score_board_team2_name') )."</p>
             </div>
             <div id='team-score'>
-       	 		<p><b><?php echo esc_attr( get_option('score_board_team2_score') ); ?></b></p>
+       	 		<p><b>".esc_attr( get_option('score_board_team2_score') )."</b></p>
             </div>
     	</div>
         <div class='team' id='team-3'>
         	<div id='team-name'>
-       	 		<p><?php echo esc_attr( get_option('score_board_team3_name') ); ?></p>
+       	 		<p>".esc_attr( get_option('score_board_team3_name') )."</p>
             </div>
             <div id='team-score'>
-       	 		<p><b><?php echo esc_attr( get_option('score_board_team3_score') ); ?></b></p>
+       	 		<p><b>".esc_attr( get_option('score_board_team3_score') )."</b></p>
             </div>
     	</div>
         <div class='team' id='team-4'>
         	<div id='team-name'>
-       	 		<p><?php echo esc_attr( get_option('score_board_team4_name') ); ?></p>
+       	 		<p>".esc_attr( get_option('score_board_team4_name') )."</p>
             </div>
             <div id='team-score'>
-       	 		<p><b><?php echo esc_attr( get_option('score_board_team4_score') ); ?></b></p>
+       	 		<p><b>."esc_attr( get_option('score_board_team4_score') )."</b></p>
             </div>
          </div>
 
