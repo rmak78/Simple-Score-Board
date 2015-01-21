@@ -7,37 +7,38 @@ function score_board_option_page()
 	?>
 	<div class="wrap"><?php screen_icon(); ?>
 	<h2>Score Board Option Page</h2>
-	<p> Type explanation text here</p>
 	<form action="options.php" method="post" id="score-board-options-form">
 	<?php settings_fields('score_board_settings'); ?>
-	<h3><label for="score_board_team1_name">Team 1 Name: </label> <input
+	<h3 align="left"><label for="score_title">Score Board Title: </label> <input
+		type="text" id="score_board_title" name="score_board_title"
+		value="<?php echo esc_attr( get_option('score_board_title') ); ?>" />
+		<table border="0">
+		<tr><h3><td></td><td>Team Name </td>
+		<td>Team Points</td></h3></tr>
+		<tr><h3><td><label for="score_board_team1_name">Team 1</label></td><td> <input
 		type="text" id="score_board_team1_name" name="score_board_team1_name"
-		value="<?php echo esc_attr( get_option('score_board_team1_name') ); ?>" />
-		<label for="score_board_team1_score">Team 1 Score: </label> <input
-		type="text" id="score_board_team1_score" name="score_board_team1_score"
+		value="<?php echo esc_attr( get_option('score_board_team1_name') ); ?>" /></td>
+		<td><input type="text" id="score_board_team1_score" name="score_board_team1_score"
 		value="<?php echo esc_attr( get_option('score_board_team1_score') ); ?>" />
-		</h3>
-		<h3><label for="score_board_team2_name">Team 2 Name: </label> <input
+		</td></h3></tr>
+		<tr><h3><td><label for="score_board_team2_name">Team 2</label></td><td> <input
 		type="text" id="score_board_team2_name" name="score_board_team2_name"
-		value="<?php echo esc_attr( get_option('score_board_team2_name') ); ?>" />
-		<label for="score_board_team2_score">Team 2 Score: </label> <input
-		type="text" id="score_board_team2_score" name="score_board_team2_score"
+		value="<?php echo esc_attr( get_option('score_board_team2_name') ); ?>" /></td>
+		<td><input type="text" id="score_board_team2_score" name="score_board_team2_score"
 		value="<?php echo esc_attr( get_option('score_board_team2_score') ); ?>" />
-		</h3>
-		<h3><label for="score_board_team3_name">Team 3 Name: </label> <input
+		</td></h3></tr>
+		<tr><h3><td><label for="score_board_team3_name">Team 3</label></td><td> <input
 		type="text" id="score_board_team3_name" name="score_board_team3_name"
-		value="<?php echo esc_attr( get_option('score_board_team3_name') ); ?>" />
-		<label for="score_board_team3_score">Team 3 Score: </label> <input
-		type="text" id="score_board_team3_score" name="score_board_team3_score"
+		value="<?php echo esc_attr( get_option('score_board_team3_name') ); ?>" /></td>
+		<td><input type="text" id="score_board_team3_score" name="score_board_team3_score"
 		value="<?php echo esc_attr( get_option('score_board_team3_score') ); ?>" />
-		</h3>
-		<h3><label for="score_board_team4_name">Team 4 Name: </label> <input
+		</td></h3></tr>
+		<tr><h3><td><label for="score_board_team4_name">Team 4 </label></td><td> <input
 		type="text" id="score_board_team4_name" name="score_board_team4_name"
-		value="<?php echo esc_attr( get_option('score_board_team4_name') ); ?>" />
-		<label for="score_board_team4_score">Team 4 Score: </label> <input
-		type="text" id="score_board_team4_score" name="score_board_team4_score"
+		value="<?php echo esc_attr( get_option('score_board_team4_name') ); ?>" /></td>
+		<td><input type="text" id="score_board_team4_score" name="score_board_team4_score"
 		value="<?php echo esc_attr( get_option('score_board_team4_score') ); ?>" />
-		</h3>
+		</td></h3></tr></table>
 	<p><input type="submit" name="submit" value="Update Score Board" /></p>
 	</form>
 	</div>
